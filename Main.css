@@ -1,0 +1,350 @@
+body {
+  background-color: rgb(250, 250, 250);
+  margin: 0;
+  padding: 0;
+}
+
+
+/******* modal *******************/
+/******* modal *******************/
+.cModal {
+  visibility: hidden;
+  margin-left: -15%;
+}
+
+.cModal:target {
+  visibility: visible;
+  transform: translate3d(12.6%,0%,0);
+  transition: transform 0.3s ease-out;
+
+}
+a:link {
+  text-decoration: none;
+  color: grey;
+}
+i.fa.fa-bars {
+  text-decoration: none;
+  color:grey;
+}
+a.cross {
+  text-decoration: none;
+  color: grey;
+}
+
+.navi.cModal:target {
+  visibility: hidden;
+}
+
+
+/******* menu *******************/
+/******* menu *******************/
+.menu {
+  height: 75px;
+  width: 100%;
+  background-color: #252425
+}
+/******* white head *******************/
+/******* white head *******************/
+.whiteB {
+  height: 105px;
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  position: relative;
+}
+#fixedtop {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 105px;
+  background: #FFFFFF;
+  z-index: 2;
+}
+.navBar {
+    font-size: 20px;
+    color:black;
+    margin-top: 58px;
+    margin-left: 85px;
+    position: absolute;
+    z-index: 1;
+    font-family: Uni - Regular;
+    font-weight:lighter;
+}
+.navBar:hover {
+  color:#CCCACB;
+  transition: color 0.2s ease-out;
+}
+.work {
+  font-size: 17px;
+  color:#CCCACB;
+  margin-top: 60px;
+  margin-left: 140px;
+  position: relative
+  z-index: 1;
+  font-family: Uni - Regular;
+  font-weight:lighter;
+}
+/*.work2 {
+  color:#CCCACB;
+  font-size: 16px;
+  position: absolute;
+  z-index: 2;
+  margin-top: -53px;
+  margin-left: 115px;
+}*/
+.work2 {
+  content: '';
+  width: 1px;
+  height: 10px;
+  margin-top: -35px;
+  margin-left: 120px;
+  color: #F2F2F2;
+}
+#fixedtop2 {
+  position: fixed;
+  top: 105px;
+  width: 100%;
+  height: 75px;
+  background: #252425;
+  display: flex;
+}
+.navigation-list {
+  height: 100%;
+  line-height: 75px;
+  color: grey;
+  list-style: none;
+  padding: 0 0 0 40px;
+  margin: 0;
+}
+.navigation-el {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Uni;
+}
+.navigation-el:hover {
+  color: rgb(245, 245, 245);
+  transition: color 0.2s ease-out;
+}
+.navigation-el:after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  content: '';
+  width: 1px;
+  height: 10px;
+  transform: translate3d(0,-50%,0);
+  background: grey;
+}
+.navigation-el:first-child {
+  padding-left: 0;
+}
+.navigation-el:last-child:after {
+  display: none;
+}
+/******* Blocs *******************/
+/******* Blocs *******************/
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-el {
+  position: relative;
+  flex: 0 1 33.33333%;
+  height: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.project-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(230, 230, 230, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.project-info--show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-img {
+  width: 100%;
+}
+.project-title {
+  color: white;
+}
+.project-client {
+  color: #CCCACB;
+  font-size: 10px;
+}
+/******* Tableaux *******************/
+/******* Tableaux *******************/
+
+.Tab {
+  margin-left: -30%;
+  height: 550px;
+  width: 240px;
+  background: rgb(220, 220, 220);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;;
+  color: #ACACAC;
+  font-style: Uni - bold;
+  font-size: 14px;
+}
+.TabTitle {
+  list-style: none;
+  line-height: 50px;
+
+}
+
+.TabSpace:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 160px;
+    height: 1px;
+    background: #EAEAEA;
+}
+
+.TabSpace:hover {
+  color: black;
+  top: 5px;
+  transition: color 0.2s ease-out;
+  transform: translate3d(15%,0,0);
+  transition: transform 0.3s ease-out;
+}
+.TabLogo {
+  list-style: none;
+  color: black;
+  display: flex;
+  justify-content:space-around;
+  font-size: 30px;
+  width: 150px;
+  margin-top: 0px;
+}
+/*.TabLogo:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 160px;
+    height: 1px;
+    background: red;
+}*/
+.TabTitle1 {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 150px;
+  font-family: Uni - Regular;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+.TabSpace1 {
+}
+
+.iconsBot {
+  color: black;
+}
+
+
+/******* Old Blocs *******************/
+/******* Old Blocs *******************/
+
+/*.all {
+  color: grey;
+  font-size: 13px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.all:hover {
+  color: rgb(245, 245, 245);
+}
+.slash1 {
+  color:grey;
+  font-size: 4px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.web {
+  color: grey;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.slash2 {
+  color:grey;
+  font-size: 4px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.film {
+  color: grey;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.slash3 {
+  color:grey;
+  font-size: 4px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.installation {
+  color: grey;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.slash4 {
+  color:grey;
+  font-size: 4px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.data {
+  color: grey;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.slash5 {
+  color:grey;
+  font-size: 4px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.mobile {
+  color: grey;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.slash6 {
+  color:grey;
+  font-size: 4px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.vr {
+  color: grey;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 15px;
+}*/
